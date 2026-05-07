@@ -1,0 +1,193 @@
+/* ── All Records Topbar ─────────────────────────────────── */
+.ar-topbar {
+  background: var(--sidebar-bg);
+  border-bottom: 1px solid var(--border-light);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ar-topbar-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ar-topbar-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── Content ────────────────────────────────────────────── */
+.ar-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1400px;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ── Filter Bar ─────────────────────────────────────────── */
+.ar-filter-bar {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ar-filter-input {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 13px;
+  flex: 1;
+  min-width: 180px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.ar-filter-input:focus {
+  border-color: var(--accent);
+}
+
+.ar-filter-select {
+  background: var(--bg-dark);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ar-filter-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.ar-filter-btn:hover {
+  background: var(--accent-hover);
+}
+
+/* ── Table ──────────────────────────────────────────────── */
+.ar-table-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.ar-table th {
+  background: var(--sidebar-bg);
+  padding: 14px 18px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.05em;
+}
+
+.ar-table td {
+  padding: 16px 18px;
+  font-size: 13px;
+  color: #c7c9d9;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.ar-table tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ar-table-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.ar-table-link:hover {
+  color: var(--accent-light);
+}
+
+/* ── Severity Badge ─────────────────────────────────────── */
+.ar-badge {
+  padding: 4px 10px;
+  border-radius: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.ar-badge-critical {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--critical);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.ar-badge-high {
+  background: rgba(249, 115, 22, 0.1);
+  color: var(--warning);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.ar-badge-medium {
+  background: rgba(234, 179, 8, 0.1);
+  color: var(--yellow);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+}
+
+.ar-badge-low {
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* ── Empty State ────────────────────────────────────────── */
+.ar-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.ar-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  gap: 10px;
+  font-size: 13px;
+}
