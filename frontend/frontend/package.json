@@ -26,8 +26,5 @@
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
     "vite": "^8.0.4"
-  },
-"overrides": {
-  "@rolldown/binding-darwin-arm64": "npm:@rolldown/binding-linux-x64-gnu@1.0.0-rc.17"
-}
+  }
 }
