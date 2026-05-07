@@ -28,3 +28,6 @@
     "vite": "^8.0.4"
   }
 }
+"overrides": {
+  "@rolldown/binding-darwin-arm64": "npm:@rolldown/binding-linux-x64-gnu@1.0.0-rc.17"
+}
